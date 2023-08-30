@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a, b;
+        
+        System.out.print("Enter the value of a: ");
+        a = sc.nextInt();
+        
+        System.out.print("Enter the value of b: ");
+        b = sc.nextInt();
+        
+        if (a > 0 && b > 0)
+            System.out.println(a + " and " + b + " lie in quadrant 1");
+        else if (a < 0 && b > 0)
+            System.out.println(a + " and " + b + " lie in quadrant 2");
+        else if (a < 0 && b < 0)
+            System.out.println(a + " and " + b + " lie in quadrant 3");
+        else if (a > 0 && b < 0)
+            System.out.println(a + " and " + b + " lie in quadrant 4");
+        else
+            System.out.println("Origin");
+    }
+}
